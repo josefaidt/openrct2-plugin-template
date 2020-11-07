@@ -1,0 +1,24 @@
+{
+  "name": "openrct2-plugin-template",
+  "author": "josefaidt",
+  "displayName": "Sample Plugin",
+  "version": "0.1.0",
+  "source": "index.js",
+  "main": "dist/my-plugin.js",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "dev": "yarn build -- watch",
+    "build": "microbundle --format cjs --sourcemap false"
+  },
+  "devDependencies": {
+    "@josefaidt/eslint-config": "^0.1.14",
+    "@josefaidt/prettier-config": "^0.0.2",
+    "eslint": "^7.13.0",
+    "got": "^11.8.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "microbundle": "^0.12.4",
+    "prettier": "^2.1.2"
+  },
+  "repository": "https://github.com/josefaidt/openrct2-plugin-template.git"
+}
